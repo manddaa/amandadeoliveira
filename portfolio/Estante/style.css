@@ -1,0 +1,124 @@
+.sinopse {
+	text-align: center;
+	font-family: cambria;
+	color: darkmagenta;
+}
+
+.subtitulo {
+	font-family: verdana;
+}
+
+.sumario {
+	font-family: cambria;
+	padding: 20px;
+	margin-bottom: 50px; 
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 300px;
+}
+
+.textoSinopse {
+	text-align: justify;
+}
+
+.tituloGeral {
+	font-family: garamond;
+	padding: 20px;
+}
+
+.tituloL {
+	background-color: thistle; 
+	text-align: center; 
+	font-family: Script MT;
+}
+
+.topo {
+	background-color: crimson;
+	color: mistyrose;
+	margin: 0px;
+}
+
+section {
+
+	/* background */
+	background-color: thistle;
+
+	/* alinhamento e tamanho */
+	padding-left: 256px;
+	padding-right: 256px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	margin: 20px;
+
+	border-radius: 50px;
+}
+
+span {
+	color:  crimson;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	background-color: darkmagenta; 
+	color: mistyrose;
+}
+
+td {
+	color: crimson; 
+	text-align: center;
+	background-color: mistyrose;
+}
+
+td, th {
+
+	/* borda */
+	border-width: 3px;
+	border-style: solid;
+	border-color: darkmagenta;
+	border-radius: 10px;
+
+	text-align: center;
+	padding: 8px;
+}
+
+body {
+
+	/* background */
+	background-color: mistyrose;
+
+	/* alinhamento e tamanho */
+	width: 85%;
+	margin: auto;
+
+}
+
+img {
+	width: 35%;
+	display: block;
+	margin: auto;
+	border-radius: 50px;
+}
+
+p {
+	text-indent: 50px;
+}
+
+a:link {
+	color:  mistyrose;
+}
+
+a:visited {
+	color: darkmagenta;
+}
+
+a:hover {
+	color: thistle;
+}
+
+a:active {
+	color: darkmagenta;
+}
+
+	

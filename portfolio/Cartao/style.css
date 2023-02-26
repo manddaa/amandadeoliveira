@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@500&display=swap');
+
+
+body {
+  background-image: linear-gradient(to bottom, #000080, #4169E1, #87CEEB);
+  font-family: "nunito";
+  width: 100vw;
+  height: 100vh;
+}
+
+.frame {
+  position: absolute;
+  background-color: #E6E6FA;
+  top: 50%;
+  left: 50%;
+  width: 432px;
+  height: 432px;
+  margin-top: -200px;
+  margin-left: -200px;
+  box-shadow: 8px 16px 16px rgba(0, 0, 0, 1.0);
+  border-radius: 30px;
+}
+
+.frame, .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-me {
+  position: absolute;
+  top: 30%;
+  left: 77%;
+  font-size: 20px;
+  transform: rotate(-90deg);
+  color: black;
+}
+
+.front h1 {
+  font-family: Satisfy, cursive;
+  font-size: 125px;
+  margin: 16px 80px;
+  color: #191970;
+}
+
+.front h2 {
+  font-size: 22px;
+  text-align: center;
+  margin: 16px 80px;
+  color: #1E90FF;
+}
+
+.front h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  text-align: center;
+  padding: 9px;
+}
+
+/* faz virar */
+.card:hover .flip {
+  transform: rotateX(180deg) translate3d(0px, 0px, 0px);
+  box-shadow: 8px -10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flip {
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  perspective: 1000px;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background: #E6E6FA;
+}
+
+.back {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.back h2 {
+  font-size: 36px;
+  margin: 8px;
+  color: black;
+} 
+
+.card .back {
+  transform: rotateX(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back h3 {
+  color: #1E90FF;
+  font-family: satisfy, cursive;
+  font-weight: 300;
+  font-size: 32px;
+  margin: 20px;
+}
+
+.back h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  color: #191970;
+}
+
+.back h5 {
+  margin: 5px;
+  color: black;
+}
+
+img {
+  width: 32px;
+}
+
+img:hover {
+  width: 46px;
+  cursor: pointer;
+}
